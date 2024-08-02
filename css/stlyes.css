@@ -31,6 +31,7 @@ text-decoration: none;
 }
 
 .eslogan{
+    margin: 0 auto;
     font-size: 2.5rem;
     text-shadow: 2rem;
     text-align: center;
@@ -145,10 +146,10 @@ z-index: 1000;
     font-weight: bolder;
     font-size: 4rem;
     text-shadow:
-    3px 0 0 rgb(0, 0, 0),    /* Desplaza a la derecha */
-    -3px 0 0 rgb(0, 0, 0),   /* Desplaza a la izquierda */
-    0 3px 0 rgb(0, 0, 0),    /* Desplaza abajo */
-    0 -3px 0 rgb(0, 0, 0);   /* Desplaza arriba */
+    2px 0 0 rgb(0, 0, 0),    /* Desplaza a la derecha */
+    -2px 0 0 rgb(0, 0, 0),   /* Desplaza a la izquierda */
+    0 2px 0 rgb(0, 0, 0),    /* Desplaza abajo */
+    0 -2px 0 rgb(0, 0, 0);   /* Desplaza arriba */
 }
 .historia{
     text-align: center;
@@ -167,4 +168,70 @@ z-index: 1000;
     box-shadow: 0 2px 5px rgb(113, 108, 108);
     color: white;
 
+}
+
+
+.cnauto {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las cartas */
+    max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.nauto {
+    background-color: rgb(255, 255, 255); /* Color de fondo para las cartas */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centrar el texto */
+    flex: 1 1 calc(33.333% - 20px); /* Ancho de cada carta (33.333% menos el espacio del gap) */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho */
+    border: #000000 solid 1px;
+    border-radius: 7px;
+
+}
+
+.cnauto > .nauto:nth-child(n+4) {
+    flex: 1 1 calc(50% - 20px); /* Ancho de las últimas 2 cartas (50% menos el espacio del gap) */
+}
+
+.nauto img {
+    max-width: 100%; /* Hacer que la imagen sea responsiva */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+@media (max-width: 576px) {
+    .cnauto {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nauto {
+        margin: 50px;
+        flex: 1 1 100%; /* Cada carta ocupa el 100% del ancho del contenedor */
+    }
+}
+.consulmed{
+    border-radius: 5px;
+    background-color: green;
+    text-decoration: none;
+}
+.overlay {
+    position: absolute;
+    top: 25vh;
+    left: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    z-index: 0;
+    margin: 0 auto;
+}
+.linkwp{
+    color: white;
+    text-decoration: none;
 }
