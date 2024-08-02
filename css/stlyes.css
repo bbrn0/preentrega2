@@ -208,14 +208,18 @@ z-index: 1000;
     
     .nauto {
         margin: 50px;
-        margin-top: 200px;
+        margin-top: 20px;
         flex: 1 1 100%;
     }
     .eslogan{
         font-size: 1.7rem;
+        padding: 20px;
     }
     .enlace{
         padding-left: 20px;
+    }
+    .overlay{
+        margin-bottom: 200px;
     }
 }
 .consulmed{
@@ -225,8 +229,8 @@ z-index: 1000;
 }
 .overlay {
     position: absolute;
-    top: 25vh;
-    left: 0 auto;
+    top: 20vh;
+    left: 0 ;
     width: 100%;
     height: 100%;
     display: flex;
