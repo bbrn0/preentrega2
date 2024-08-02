@@ -38,10 +38,10 @@ text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bolder;
     text-shadow:
-    2.5px 0 0 rgb(0, 0, 0),    /* Desplaza a la derecha */
-    -2.5px 0 0 rgb(0, 0, 0),   /* Desplaza a la izquierda */
-    0 2.5px 0 rgb(0, 0, 0),    /* Desplaza abajo */
-    0 -2.5px 0 rgb(0, 0, 0);   /* Desplaza arriba */
+    2.5px 0 0 rgb(0, 0, 0),    
+    -2.5px 0 0 rgb(0, 0, 0),   
+    0 2.5px 0 rgb(0, 0, 0),    
+    0 -2.5px 0 rgb(0, 0, 0);   
 
 
 }
@@ -146,10 +146,10 @@ z-index: 1000;
     font-weight: bolder;
     font-size: 4rem;
     text-shadow:
-    2px 0 0 rgb(0, 0, 0),    /* Desplaza a la derecha */
-    -2px 0 0 rgb(0, 0, 0),   /* Desplaza a la izquierda */
-    0 2px 0 rgb(0, 0, 0),    /* Desplaza abajo */
-    0 -2px 0 rgb(0, 0, 0);   /* Desplaza arriba */
+    2px 0 0 rgb(0, 0, 0),    
+    -2px 0 0 rgb(0, 0, 0),   
+    0 2px 0 rgb(0, 0, 0),    
+    0 -2px 0 rgb(0, 0, 0);   
 }
 .historia{
     text-align: center;
@@ -175,30 +175,30 @@ z-index: 1000;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espacio entre las cartas */
-    max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+    gap: 20px; 
+    max-width: 1200px; 
     justify-content: center;
     margin-bottom: 50px;
 }
 
 .nauto {
-    background-color: rgb(255, 255, 255); /* Color de fondo para las cartas */
-    padding: 20px; /* Espacio interno */
-    text-align: center; /* Centrar el texto */
-    flex: 1 1 calc(33.333% - 20px); /* Ancho de cada carta (33.333% menos el espacio del gap) */
-    box-sizing: border-box; /* Incluir padding y borde en el ancho */
+    background-color: rgb(255, 255, 255); 
+    padding: 20px; 
+    text-align: center; 
+    flex: 1 1 calc(33.333% - 20px); 
+    box-sizing: border-box;
     border: #000000 solid 1px;
     border-radius: 7px;
 
 }
 
 .cnauto > .nauto:nth-child(n+4) {
-    flex: 1 1 calc(50% - 20px); /* Ancho de las últimas 2 cartas (50% menos el espacio del gap) */
+    flex: 1 1 calc(50% - 20px);
 }
 
 .nauto img {
-    max-width: 100%; /* Hacer que la imagen sea responsiva */
-    height: auto; /* Mantener la proporción de la imagen */
+    max-width: 100%;
+    height: auto; 
 }
 @media (max-width: 576px) {
     .cnauto {
@@ -208,7 +208,11 @@ z-index: 1000;
     
     .nauto {
         margin: 50px;
-        flex: 1 1 100%; /* Cada carta ocupa el 100% del ancho del contenedor */
+        margin-top: 200px;
+        flex: 1 1 100%;
+    }
+    .eslogan{
+        font-size: 1.7rem;
     }
 }
 .consulmed{
@@ -234,4 +238,12 @@ z-index: 1000;
 .linkwp{
     color: white;
     text-decoration: none;
+}
+.crrss{
+    display: inline;
+}
+.rrss{
+    width: 35px;
+    margin: 20px;
+    padding: 7px;
 }
