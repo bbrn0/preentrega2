@@ -22,7 +22,7 @@ body, html{
 .enlace{
     text-align: center;
     text-decoration: none;
-    padding: 4rem;
+    padding-left: 55px;
 }
 .enlace:hover{
 
@@ -213,6 +213,9 @@ z-index: 1000;
     }
     .eslogan{
         font-size: 1.7rem;
+    }
+    .enlace{
+        padding-left: 20px;
     }
 }
 .consulmed{
