@@ -1,0 +1,50 @@
+.overlayeslogan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $blanco;
+    text-align: center;
+    z-index: 0;
+    .eslogan{   
+        margin: 0 auto;
+        font-size: 2.5rem;
+        text-align: center;
+        color: $blanco;
+        font-weight: bolder;
+        text-shadow: 1.4px 0 0 #000000, -1.4px 0 0 #000000, 0 1.4px 0 #000000, 0 -1.4px 0 #000000;
+        font-family: "Bebas Neue", sans-serif;
+        font-style: normal;
+    }
+}
+.Mcontent{
+    padding: 50px;
+    background-color: $grisoscuro;
+    position: relative;
+    .content{
+        color: $blanco;
+        padding: 15px;
+        background-color: $gris;
+        box-sizing: border-box;
+        border: 2px solid $oscuro;
+        border-radius: 12px;
+        .map-containter{
+            border: 1px solid $oscuro;
+        }
+    }
+}
+.stickycontact{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    .contactlogo{
+        max-width: 75px;
+        height: auto;
+    }
+}

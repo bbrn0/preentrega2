@@ -1,0 +1,19 @@
+@import "_var";
+@import "header";
+@import "videos";
+@import "main";
+@import "footer";
+@import "nosotros";
+@import "nauto";
+
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: "Cabin", sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+

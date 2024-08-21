@@ -1,0 +1,251 @@
+header {
+  z-index: 1000;
+}
+header section .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(52, 51, 51);
+}
+header section .navbar .logo .imgLogo {
+  width: 5rem;
+  margin: 5px;
+  padding-left: 15px;
+}
+header section .navbar .menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header section .navbar .menu li {
+  margin-right: 20px;
+}
+header section .navbar .menu li a {
+  text-decoration: none;
+  color: white;
+}
+header section .navbar .menu li:hover a {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  header section .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 0;
+    padding-left: 2px;
+  }
+  header section .navbar .logo .imgLogo {
+    width: 4rem;
+    margin: 0px;
+    padding-left: 0px;
+  }
+  header section .navbar .menu {
+    display: flex;
+    justify-content: end;
+  }
+  header section .navbar .menu li {
+    margin: 5px;
+    text-align: center;
+  }
+}
+.bgvideo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.bgvideo .videobg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+}
+
+.overlayeslogan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  z-index: 0;
+}
+.overlayeslogan .eslogan {
+  margin: 0 auto;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 1.4px 0 0 #000000, -1.4px 0 0 #000000, 0 1.4px 0 #000000, 0 -1.4px 0 #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+}
+
+.Mcontent {
+  padding: 50px;
+  background-color: rgb(52, 51, 51);
+  position: relative;
+}
+.Mcontent .content {
+  color: white;
+  padding: 15px;
+  background-color: rgb(126, 124, 124);
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+.Mcontent .content .map-containter {
+  border: 1px solid black;
+}
+
+.stickycontact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.stickycontact .contactlogo {
+  max-width: 75px;
+  height: auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  flex-shrink: 0;
+}
+footer .logo-footer .logo {
+  width: 6rem;
+}
+footer .logo-footer h6 {
+  font-size: 1rem;
+}
+footer .container {
+  color: rgb(52, 51, 51);
+}
+footer .crrss {
+  display: inline;
+}
+footer .crrss .rrss {
+  width: 35px;
+  margin: 10px;
+  padding: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.historiatxt {
+  padding: 50px;
+  background-color: rgb(52, 51, 51);
+  position: relative;
+}
+.historiatxt .historiacaja {
+  padding: 20px;
+  background-color: rgb(126, 124, 124);
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+}
+.historiatxt .historiacaja .historia {
+  font-size: 1.7rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  z-index: 0;
+  margin: 0 auto;
+}
+.overlay .eslogan {
+  margin: 0 auto;
+  font-size: 2.5rem;
+  text-shadow: 2rem;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 1.5px 0 0 black, -1.5px 0 0 black, 0 1.5px 0 black, 0 -1.5px 0 black;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+}
+
+.cnauto {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.cnauto .nauto {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  border: black solid 1px;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+.cnauto .nauto:hover {
+  background-color: rgb(126, 124, 124);
+  transform: scale(1.2);
+}
+.cnauto .nauto:hover img {
+  transform: scale(1.1);
+}
+.cnauto .nauto img {
+  max-width: 80%;
+  height: auto;
+}
+.cnauto .nauto:nth-child(n+4) {
+  flex: 1 1 calc(50% - 20px);
+}
+.cnauto .nauto .consulmed {
+  border-radius: 5px;
+  background-color: green;
+  text-decoration: none;
+}
+.cnauto .nauto .linkwp {
+  color: white;
+  text-decoration: none;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */

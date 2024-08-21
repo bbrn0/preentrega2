@@ -1,0 +1,15 @@
+.historiatxt{
+    padding: 50px;
+    background-color: $grisoscuro;
+    position: relative;
+    .historiacaja{
+        padding: 20px;
+        background-color: $gris;
+        border-radius: 10px;
+        border: 2px solid $oscuro;
+        color: $blanco;
+        .historia{
+            font-size: 1.7rem;
+        }
+    }
+}
