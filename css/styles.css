@@ -239,6 +239,27 @@ footer .crrss .rrss {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .cnauto {
+    gap: 25px;
+    max-width: 1000px;
+  }
+  .cnauto .nauto {
+    margin: 15px;
+    padding: 35px;
+    flex: 1 1 80%;
+  }
+  .cnauto .nauto:nth-child(n+4) {
+    flex: 1 1 80%;
+  }
+  .cnauto .nauto:hover {
+    background-color: rgb(126, 124, 124);
+    transform: scale(1.05);
+  }
+  .cnauto .nauto:hover img {
+    transform: scale(1.1);
+  }
+}
 body, html {
   margin: 0;
   padding: 0;

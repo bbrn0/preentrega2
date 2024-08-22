@@ -70,3 +70,24 @@
         }
     }
 }
+@media only screen and (max-width: 600px) {
+    .cnauto{
+        gap: 25px; 
+        max-width: 1000px; 
+        .nauto{
+            margin: 15px;
+            padding: 35px;
+            flex: 1 1 80%; 
+            &:nth-child(n+4) {
+                flex: 1 1 80%;
+            }
+            &:hover{
+                background-color: $gris;
+                transform: scale(1.05);
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
