@@ -30,17 +30,17 @@
 }
 .cnauto{
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    gap: 100px; 
     max-width: 1200px; 
     justify-content: center;
     margin-bottom: 50px;
     .nauto{
         background-color: $blanco; 
         padding: 20px; 
-        text-align: center; 
-        flex: 1 1 calc(33.333% - 20px); 
+        text-align: center;
         box-sizing: border-box;
         border: $oscuro solid 1px;
         border-radius: 7px;
@@ -56,9 +56,6 @@
             max-width: 80%;
             height: auto;
         }
-        &:nth-child(n+4) {
-            flex: 1 1 calc(50% - 20px);
-        }
         .consulmed{
             border-radius: 5px;
             background-color: $verde;
@@ -72,15 +69,13 @@
 }
 @media only screen and (max-width: 600px) {
     .cnauto{
-        gap: 25px; 
-        max-width: 1000px; 
+        gap: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         .nauto{
             margin: 15px;
             padding: 35px;
-            flex: 1 1 80%; 
-            &:nth-child(n+4) {
-                flex: 1 1 80%;
-            }
+            
             &:hover{
                 background-color: $gris;
                 transform: scale(1.05);

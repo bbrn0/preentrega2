@@ -6,12 +6,15 @@ header section .navbar {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: rgb(52, 51, 51);
+  background-color: black;
 }
 header section .navbar .logo .imgLogo {
   width: 5rem;
   margin: 5px;
   padding-left: 15px;
+}
+header section .navbar .navbor {
+  border-color: rgb(126, 124, 124);
 }
 header section .navbar .menu {
   display: flex;
@@ -19,14 +22,11 @@ header section .navbar .menu {
   margin: 0;
   padding: 0;
 }
-header section .navbar .menu li {
-  margin-right: 20px;
-}
-header section .navbar .menu li a {
+header section .navbar .menu a {
+  margin-right: 5px;
   text-decoration: none;
-  color: white;
 }
-header section .navbar .menu li:hover a {
+header section .navbar .menu a:hover {
   text-decoration: underline;
 }
 
@@ -47,11 +47,8 @@ header section .navbar .menu li:hover a {
   }
   header section .navbar .menu {
     display: flex;
-    justify-content: end;
-  }
-  header section .navbar .menu li {
-    margin: 5px;
-    text-align: center;
+    padding-left: 10px;
+    padding-bottom: 2px;
   }
 }
 .bgvideo {
@@ -198,9 +195,10 @@ footer .crrss .rrss {
 
 .cnauto {
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  gap: 100px;
   max-width: 1200px;
   justify-content: center;
   margin-bottom: 50px;
@@ -209,7 +207,6 @@ footer .crrss .rrss {
   background-color: white;
   padding: 20px;
   text-align: center;
-  flex: 1 1 calc(33.333% - 20px);
   box-sizing: border-box;
   border: black solid 1px;
   border-radius: 7px;
@@ -226,9 +223,6 @@ footer .crrss .rrss {
   max-width: 80%;
   height: auto;
 }
-.cnauto .nauto:nth-child(n+4) {
-  flex: 1 1 calc(50% - 20px);
-}
 .cnauto .nauto .consulmed {
   border-radius: 5px;
   background-color: green;
@@ -241,16 +235,13 @@ footer .crrss .rrss {
 
 @media only screen and (max-width: 600px) {
   .cnauto {
-    gap: 25px;
-    max-width: 1000px;
+    gap: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .cnauto .nauto {
     margin: 15px;
     padding: 35px;
-    flex: 1 1 80%;
-  }
-  .cnauto .nauto:nth-child(n+4) {
-    flex: 1 1 80%;
   }
   .cnauto .nauto:hover {
     background-color: rgb(126, 124, 124);
