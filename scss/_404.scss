@@ -1,0 +1,18 @@
+main{
+    .error-404{
+        height: 70vh;
+        margin: 100px;
+        h1{
+            display: flex;
+            justify-content: center;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            font-style: italic;
+            font-weight: bolder;
+        }
+    }
+}

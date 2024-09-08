@@ -133,7 +133,7 @@ footer {
 footer .logo-footer .logo {
   width: 6rem;
 }
-footer .logo-footer h6 {
+footer .logo-footer p {
   font-size: 1rem;
 }
 footer .container {
@@ -251,6 +251,23 @@ footer .crrss .rrss {
     transform: scale(1.1);
   }
 }
+main .error-404 {
+  height: 70vh;
+  margin: 100px;
+}
+main .error-404 h1 {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-weight: bolder;
+}
+main .error-404 p {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-weight: bolder;
+}
+
 body, html {
   margin: 0;
   padding: 0;
