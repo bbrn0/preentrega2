@@ -48,6 +48,7 @@
             <h1 class="eslogan">Elige los neumáticos correctos y sienta la diferencia. </h1>
 			<h2 class="eslogan"><br>Tus neumáticos, nuestra pasión. <br> El camino perfecto comienza con buenos neumáticos. <br>¡Descubre la revolución en neumáticos!</h2>
         </div>
+        
         <div class="cnauto">
 			<div class="nauto">
 				<img src="../images/nauto-carrera.webp" alt="Neumáticos de carretera">
@@ -80,6 +81,37 @@
 				<button class="consulmed"><a href="https://api.whatsapp.com/send?phone=111111111111" target="_blank" class="linkwp">Consultar medidas</a></button>
 			</div>
 		</div>
+        <section class="buscador">
+            <div>
+                <label for="altura">Altura:</label>
+                <select id="altura">
+                <option value="">Seleccione una opción</option>
+                <option value="60">60</option>
+                <option value="65">65</option>
+                <option value="70">70</option>
+                </select>
+            </div>
+            <div>
+                <label for="ancho">Ancho:</label>
+                <select id="ancho">
+                <option value="">Seleccione una opción</option>
+                <option value="185">185</option>
+                <option value="195">195</option>
+                <option value="205">205</option>
+                </select>
+            </div>
+            <div>
+                <label for="rodado">Rodado:</label>
+                <select id="rodado">
+                <option value="">Seleccione una opción</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                </select>
+            </div>
+            <button id="filtrar-btn">Filtrar</button>
+            <div id="resultados"></div>
+        </section>
         <div class="Mcontent">
             <section class="content">
                 <h2>Encuentra la sucursal pirelli mas cercana</h2>
@@ -114,6 +146,7 @@
             
         </div>
     </footer>
+    <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

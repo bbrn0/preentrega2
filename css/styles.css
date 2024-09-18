@@ -233,6 +233,12 @@ footer .crrss .rrss {
   text-decoration: none;
 }
 
+.buscador {
+  color: white;
+  margin: 0 auto;
+  padding: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .cnauto {
     gap: 0px;
