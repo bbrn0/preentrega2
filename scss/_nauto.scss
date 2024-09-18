@@ -69,8 +69,13 @@
 }
 .buscador{
     color: $blanco;
+    border-radius: 5px;
+    border: 1px solid $oscuro;
+    width: 300px;
+    background-color: $gris;
     margin: 0 auto;
-    padding: 0;
+    padding: 10px;
+
 
     
 }
